@@ -1,0 +1,24 @@
+ALGORITHM Insertion
+   VAR
+   holePosition: INTEGER
+   valueToInsert: INTEGER
+	
+    FOR i FROM 1 TO length(A)   DO
+      valueToInsert = A[i]
+      holePosition = i
+      
+    END_FOR
+ 
+	
+      
+		WHILE (holePosition > 0 and A[holePosition-1] > valueToInsert) DO
+             A[holePosition] = A[holePosition-1]
+         holePosition = holePosition -1
+        END_WHILE
+     
+		
+      A[holePosition] = valueToInsert
+      
+	
+
+END
